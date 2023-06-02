@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Расчет стоимости</title>
+    <link rel="stylesheet" href="">
+</head>
+<style>
+    body{
+        background-image:url("img/image 1.png");
+        background-repeat: no-repeat;
+        background-color:#2484F5 ;
+    }
+    h1{
+        color: white;
+        font-size: 40px;
+        font-weight: bold;
+        line-height: 48px;
+        text-align: center;
+
+    }
+    form{
+        position: absolute;
+        width: 931px;
+        height: 460px;
+        left: 294px;
+        top: 200px;
+        background: rgba(255, 255, 255, 0.8);
+        border-radius: 15px;
+        margin-top: -30px;
+
+    }
+    h2{
+        margin-top: 5px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 48px;
+        text-align: center;
+        color: #2484F5;
+    }
+    h3{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 48px;
+        color: #000000;
+    }
+    .dl{
+        margin-left: 170px;
+        margin-top: -65px;
+    }
+    .dl>input{
+        background: #FFFFFF;
+        border: 1px solid #000000;
+        border-radius: 15px;
+        padding: 5px 5px 5px 5px;
+    }
+    .marshrut{
+        margin-left: 170px;
+        margin-top: -89px;
+        display: flex;
+        gap: 10px;
+
+    }
+    .marshrut>input{
+        background: #FFFFFF;
+        border: 1px solid #000000;
+        border-radius: 15px;
+        padding: 5px 5px 5px 5px;
+        margin-left: 80px;
+    }
+    .vibor{
+        margin-top: 40px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 48px;
+        color: #000000;
+    }
+    .radios{
+        margin-left: 300px;
+        font-size: 30px;
+        font-weight: lighter;
+        margin-top: -60px;
+
+    }
+    .container{
+        margin-left: 40px;
+    }
+    .kon{
+        display: flex;
+        gap: 20px;
+    }
+    .kon>input{
+        background: greenyellow;
+        border-radius: 15px;
+        height: 30px;
+        margin-top: 43px;
+    }
+    .bth{
+        margin-top: 560px;
+        text-align: center;
+    }
+    button{
+        width: 200px;
+        height: 50px;
+        background: #2484F5;
+        border-radius: 15px;
+        border: 1px solid #2484F5;
+        color: white;
+        font-weight: bold;
+    }
+
+</style>
+<body>
+<h1>На данной странице,вы можете рассчитать стоимость
+    <br>планируемой поездки,заполнив данные в форме.</h1>
+<form name="raschet" id="form">
+    <div class="container">
+    <h2>Рассчитайте!</h2>
+   <h3>Введите км</h3>
+    <div class="dl">
+        <input id="dlina" type="number">
+    </div>
+    <h3>Введите кол-во
+        <br>часов поездки</h3>
+    <div class="marshrut">
+        <input id="shrina" type="number">
+    </div>
+   <div class="vibor">
+       <span>Выберите кол-во
+        <br>мест в автобусе</span>
+   </div>
+
+    <div class="radios" id="radios">
+        <input type="radio" id="mest" name="round">
+        <label for="mest">8 мест</label>
+        <input type="radio" id="mestt" name="round">
+        <label for="mestt">20 мест</label>
+        <input type="radio" id="mesttt" name="round">
+        <label for="mesttt">28 мест</label>
+        <br>
+        <input type="radio" id="mestttt" name="round">
+        <label for="mestttt">40 мест </label>
+        <input type="radio" id="mesttttt" name="round">
+        <label for="mesttttt">49 мест </label>
+    </div>
+    <div>
+        <div class="kon">
+            <h3>Итоговая стоимость поездки</h3>
+            <input id="stoimost" disabled>
+        </div>
+    </div>
+    </div>
+</form>
+<div class="bth">
+    <button name="zakaz"  onclick="window.location.href='https://avtopark-52.ru/#rec42916217'">Заказать</button>
+</div>
+<script src="2.js"></script>
+</body>
+</html>
